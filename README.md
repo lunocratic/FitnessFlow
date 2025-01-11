@@ -10,6 +10,8 @@ Due to storage issues, the complete project files are hosted on an external serv
 
 ## 🏆 About This Project
 
+![Fitness Flow Gradient](https://github.com/your-username/repo-name/path-to-image/fitness-gradient.png)
+
 This project, **Fitness Flow**, was completed by me in my **first year** as part of my **DTI project**. It aims to solve fitness challenges and provide guidance to users through an easy-to-use platform. Users can track and manage their fitness routines, making it easier to stay on track with their goals.
 
 ---
