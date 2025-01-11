@@ -1,10 +1,16 @@
-# Project Title : Fitness Flow
+# Fitness Flow
 
 ## 🚀 Project Download
 
 Due to storage issues, the complete project files are hosted on an external server. To get the full project, please download it using the link below:
 
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
+
+---
+
+## 🏆 About This Project
+
+This project, **Fitness Flow**, was completed by me in my **first year** as part of my **DTI project**. It aims to solve fitness challenges and provide guidance to users through an easy-to-use platform. Users can track and manage their fitness routines, making it easier to stay on track with their goals.
 
 ---
 
