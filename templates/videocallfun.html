@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Meeting Platform</title>
+    <link rel="stylesheet" href="{% static 'css/videocallfun.css' %}">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to <span class="highlight">Fitness Flow</span></h1>
+            <p class="subtitle">A virtual meeting platform for fitness enthusiasts</p>
+            
+            <div class="button-container">
+                <!-- Create Meeting button with empty link -->
+                <a href="{% url 'videocall' %}" class="btn create">
+                    <i class="fas fa-plus-circle"></i>
+                    Create Meeting
+                    <span class="btn-description">Start a new video conference</span>
+                </a>
+                
+                <!-- Join Meeting button with empty link -->
+                <a href="{% url 'joinvideocall' %}" class="btn join">
+                    <i class="fas fa-video"></i>
+                    Join Meeting
+                    <span class="btn-description">Enter a meeting code to join</span>
+                </a>
+                
+                <!-- How It Works button with empty link -->
+                <a href="{% url 'videocall' %}" class="btn how-it-works">
+                    <i class="fas fa-info-circle"></i>
+                    How It Works
+                    <span class="btn-description">Learn more about our platform</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="decoration">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+        </div>
+    </div>
+</body>
+</html>

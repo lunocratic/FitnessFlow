@@ -1,0 +1,262 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+  
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <main class="content-wrapper">
+        <nav class="navbar">
+            <div class="logo">FITNESS FLOW</div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'contactus' %}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>About Us</h1>
+        </div>
+
+        <section class="about-content">
+            <div class="team-section">
+                <h2>Our Team</h2>
+                <div class="team-grid animate-members">
+                    <!-- Member 1 - with link -->
+                    <div class="team-member clickable">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/ashok.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Ashok</h3>
+                                <p>WebDeveloper (Cooked Hard)</p>
+                                <a href="{% url 'ashok' %}" class="member-link">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 - with link -->
+                    <div class="team-member clickable">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/rahul.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Rahul</h3>
+                                <p>Co WebDeveloper</p>
+                                <a href="{% url 'rahul' %}" class="member-link">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/Revanth.png' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Revanth</h3>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/krishna.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>krishna</h3>
+                                <p>Information Guider </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 5 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/rohit.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Rohith</h3>
+                                <p>Information Guider</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 6 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/sreedhar.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Sreedhar</h3>
+                                <p>PPT Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 7 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/prashanth.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Prashanth</h3>
+                                <p>PPT Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 8 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/vijay.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Vijay</h3>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 9 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/ashok.jpeg' %}" alt="Team Member 1">
+                            <div class="member-info">
+                                <h3>Aditya</h3>
+                                <p>Researcher - Article Writter</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 10 -->
+                    <div class="team-member">
+                        <div class="member-card">
+                            <img src="{% static 'images/members/kazha.jpeg' %}" alt="Team Member 1">
+                                <h3>kazha</h3>
+                                <p>Article Writter </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h2>Our Mission</h2>
+                <p class="mission-text">Fitness Flow Is All About Helping You Smash Your Fitness Goals Using The Latest Tools And Smart Solutions. 💪 We Mix Modern Tech With Expert Guidance To Create A Personalized Approach That Keeps You Fit, Motivated, And Engaged Every Step Of The Way. 🚀💡 Whether You're Just Starting Out Or Leveling Up, We're Here To Help You Become A Healthier, Stronger, And More Energized Version Of Yourself! 🌟 Let’s Flow Into Fitness Together! 😎</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; {% now "Y" %} Fitness Flow All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <style>
+        /* Loader styles */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .loading-text {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Content animation styles */
+        .animate-members {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 1s ease;
+            visibility: hidden;
+        }
+
+        .animate-members.show {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        /* Optional: Add a stagger effect to individual team members */
+        .team-member {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease;
+        }
+
+        .animate-members.show .team-member {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger the animation for each member */
+        .animate-members.show .team-member:nth-child(1) { transition-delay: 0.1s; }
+        .animate-members.show .team-member:nth-child(2) { transition-delay: 0.2s; }
+        .animate-members.show .team-member:nth-child(3) { transition-delay: 0.3s; }
+        .animate-members.show .team-member:nth-child(4) { transition-delay: 0.4s; }
+        .animate-members.show .team-member:nth-child(5) { transition-delay: 0.5s; }
+        .animate-members.show .team-member:nth-child(6) { transition-delay: 0.6s; }
+        .animate-members.show .team-member:nth-child(7) { transition-delay: 0.7s; }
+        .animate-members.show .team-member:nth-child(8) { transition-delay: 0.8s; }
+        .animate-members.show .team-member:nth-child(9) { transition-delay: 0.9s; }
+        .animate-members.show .team-member:nth-child(10) { transition-delay: 1s; }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.querySelector('.loader-wrapper');
+            const teamGrid = document.querySelector('.animate-members');
+
+            // Hide team grid initially
+            teamGrid.style.visibility = 'hidden';
+
+            // After page loads
+            window.addEventListener('load', function() {
+                // Wait 1 second then hide loader
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    loader.style.visibility = 'hidden';
+                    
+                    // Show team members with animation
+                    setTimeout(() => {
+                        teamGrid.style.visibility = 'visible';
+                        teamGrid.classList.add('show');
+                    }, 300);
+                }, 1000);
+            });
+        });
+    </script>
+
+    <script src="{% static 'js/about.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Destinations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/usertrainer.css' %}"> <!-- Link to external CSS file using static tag -->
+    <style>
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111827;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .loading-text {
+            position: relative;
+            font-size: 60px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .loading-text::before {
+            content: 'FITNESS FLOW';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgba(255, 255, 255, 0.15);
+            border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .loading-text::after {
+            content: 'FITNESS FLOW';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: linear-gradient(45deg, 
+                #38bdf8,
+                #818cf8,
+                #c084fc
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            overflow: hidden;
+            border-bottom: 3px solid #38bdf8;
+            animation: filling 2.5s ease-in-out infinite;
+        }
+
+        @keyframes filling {
+            0% {
+                height: 0;
+                border-bottom-color: #38bdf8;
+            }
+            50% {
+                height: 100%;
+                border-bottom-color: #c084fc;
+            }
+            100% {
+                height: 0;
+                border-bottom-color: #38bdf8;
+            }
+        }
+
+        .loader-wrapper.fade-out {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.8s ease-out;
+        }
+
+        .loading-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dumbbell-wrapper {
+            position: relative;
+            font-size: 50px;
+        }
+
+        .dumbbell-base {
+            color: rgba(255, 255, 255, 0.15);
+        }
+
+        .dumbbell-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            overflow: hidden;
+            animation: filling 2.5s ease-in-out infinite;
+            background: linear-gradient(45deg, 
+                #38bdf8,  /* Sky blue */
+                #818cf8,  /* Indigo */
+                #c084fc   /* Purple */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .dumbbell-base, .dumbbell-fill {
+            animation-name: lift;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes lift {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes filling {
+            0% {
+                height: 0;
+            }
+            50% {
+                height: 100%;
+            }
+            100% {
+                height: 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loading-container">
+            <div class="dumbbell-wrapper">
+                <i class="fas fa-dumbbell dumbbell-base"></i>
+                <i class="fas fa-dumbbell dumbbell-fill"></i>
+            </div>
+            <div class="loading-text">FITNESS FLOW</div>
+        </div>
+    </div>
+
+    <!-- Background Videos for Desktop and Mobile -->
+    <video autoplay loop muted class="background-video">
+        <source src="{% static 'videos/Bgvideo.mp4' %}" type="video/mp4"> <!-- Use static tag for video -->
+        Your browser does not support the video tag.
+    </video>
+    <video autoplay loop muted class="background-video-mobile">
+        <source src="{% static 'videos/Background.mp4' %}" type="video/mp4"> <!-- Use static tag for video -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Card Container -->
+    <div class="container">
+        <!-- User Card -->
+        <div class="card">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="{% static 'images/fitnessuser.jpg' %}" alt="User fitness model"> <!-- Use static tag for image -->
+                    <div class="text">User</div>
+                </div>
+                <div class="back">
+                    <div class="text">User</div>
+                    <p>Click the Go option for the next page.</p>
+                    <a href="{% url 'dashboard' %}" class="login-button">Go</a> <!-- Use Django URL tag for navigation -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Trainer Card -->
+        <div class="card">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="{% static 'images/trainer.jpeg' %}" alt="Trainer fitness model"> <!-- Use static tag for image -->
+                    <div class="text">Trainer</div>
+                </div>
+                <div class="back">
+                    <div class="text">Trainer</div>
+                    <p>Click the Go option for the next page.</p>
+                    <a href="{% url 'dashboard' %}" class="login-button">Go</a> <!-- Use Django URL tag for navigation -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Option -->
+    <div class="account-option">
+        <a href="{% url 'signup' %}">Don't have an account?</a> <!-- Use Django URL tag for navigation -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loaderWrapper = document.querySelector('.loader-wrapper');
+            setTimeout(() => {
+                loaderWrapper.classList.add('fade-out');
+            }, 2500);
+        });
+    </script>
+</body>
+</html>

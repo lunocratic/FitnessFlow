@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="company-name">Fitness Flow</div>
+        <div class="user-greeting">Hello </div>
+        <div class="nav-links">
+            <a class="login-button" href="{% url 'home' %}">Home</a>
+            <a class="login-button" href="{% url 'dashboard' %}">Dashboard</a>
+            <a class="login-button" href="{% url 'about' %}">About Us</a>
+           
+        </div>
+    </nav>
+
+    <!-- Updated featured container -->
+    <div class="featured-container">
+        <div class="content-wrapper">
+            <div class="content-front">
+                <h2>✨ Community Stories ✨</h2>
+                <p class="subtitle">Explore Inspiring Fitness Journeys</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">User Stories</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Daily</span>
+                        <span class="stat-label">Updates</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-back">
+                <h2>Join Our Community!</h2>
+                <p class="subtitle">Discover Amazing Transformations</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">Share</span>
+                        <span class="stat-label">Your Journey</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Connect</span>
+                        <span class="stat-label">With Others</span>
+                    </div>
+                </div>
+                <a class="featured-link" href="{% url 'blogs' %}">blogs</a>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Container -->
+    <div class="articles-container">
+        <!-- First Row -->
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Workout Tips">
+            <h2>Workout Tips</h2>
+            <a href="https://example.com/article1" class="read-more-btn">Read More</a>
+        </div>
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Healthy Diet">
+            <h2>Healthy Diet</h2>
+            <a href="https://example.com/article2" class="read-more-btn">Read More</a>
+        </div>
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c" alt="Cardio Exercises">
+            <h2>Cardio Exercises</h2>
+            <a href="https://example.com/article3" class="read-more-btn">Read More</a>
+        </div>
+        
+        <!-- Second Row -->
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Strength Training">
+            <h2>Strength Training</h2>
+            <a href="https://example.com/article4" class="read-more-btn">Read More</a>
+        </div>
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Yoga Basics">
+            <h2>Yoga Basics</h2>
+            <a href="https://example.com/article5" class="read-more-btn">Read More</a>
+        </div>
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Nutrition Guide">
+            <h2>Nutrition Guide</h2>
+            <a href="https://example.com/article6" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.querySelectorAll('.article').forEach(article => {
+            article.addEventListener('mouseenter', () => {
+                article.style.transform = 'scale(1.05)';
+            });
+            
+            article.addEventListener('mouseleave', () => {
+                article.style.transform = 'scale(1)';
+            });
+        });
+    </script> -->
+</body>
+</html> 

@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Flow</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Your Custom CSS File -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-bar">
+            <div></div>
+        </div>
+        <div class="loader-text">
+            Developed By Kl University Students
+        </div>
+    </div>
+    <video autoplay loop muted class="background-video">
+        <!-- Correctly linked video file -->
+        <source src="{% static 'videos/batman.mp4' %}" type="video/mp4">
+        Your browser does not support the Video tag.
+    </video>
+    <div class="header" id="header">
+        <h1 onclick="location.reload()">FITNESS FLOW</h1>
+        <div class="nav">
+            <!-- Correct links -->
+            <a Name="aboutus" id="aboutus" href="{% url 'about' %}">ABOUT</a>
+            <a Name="contact" id="contact" href="{% url 'contactus' %}">CONTACT</a>
+            <a Name="article" id="article" href="{% url 'article' %}">ARTICLES</a>
+
+   
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">MENU</div>
+    </div>
+    <div class="content" id="content">
+        <a class="explore-button" href="{% url 'usertrainer' %}">Let's Start</a>
+    </div>
+    <div class="footer">&copy; Made With Love</div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            const header = document.getElementById('header');
+            setTimeout(() => {
+                loader.style.display = 'none';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+                content.style.opacity = '1';
+                content.style.transform = 'translateY(0)';
+            }, 800); 
+        });
+    </script>
+</body>
+</html>

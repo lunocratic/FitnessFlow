@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Blog Posts</title>
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <h1 class="site-title">FITNESS FLOW</h1>
+                </div>
+                
+                <div class="nav-center">
+                    <span class="welcome-text">Welcome, <span>User</span>!</span>
+                </div>
+
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+                        <li><a href="/articles/" class="nav-link {% if request.path == '/articles/' %}active{% endif %}">Articles</a></li>
+                        <li><a href="/dashboard/" class="nav-link {% if request.path == '/dashboard/' %}active{% endif %}">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Latest Blog Posts</h1>
+
+            <div class="blog-grid">
+                {% for post in posts %}
+                    <article class="blog-card">
+                        {% if post.image %}
+                            <div class="card-image">
+                                <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                            </div>
+                        {% endif %}
+                        
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="date">{{ post.created_on|date:"M d, Y" }}</span>
+                                <span class="status">{{ post.get_status_display }}</span>
+                            </div>
+                            <h2 class="card-title"><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+                            <div class="card-author">By {{ post.author }}</div>
+                            <p class="card-excerpt">{{ post.content|truncatewords:20 }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="card-link">Read More →</a>
+                        </div>
+                    </article>
+                {% empty %}
+                    <p class="no-posts">No blog posts available at the moment.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

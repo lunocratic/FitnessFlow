@@ -1,0 +1,278 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS FLOW</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}"/>
+    <style>
+        .container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #000; /* Prevents white flash between loops */
+        }
+
+        .container-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .container-link:hover {
+            cursor: pointer;
+        }
+
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(#ff3e3e, #4286f4);
+            animation: rotate 1s linear infinite;
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            background: #000;
+            inset: 5px;
+            border-radius: 50%;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.loaded #loading-screen {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="brand" style="color: #00ff88;">FITNESS FLOW</div>
+        <div class="welcome-text">Welcome, {{ name }}!</div>
+        <div class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'user_information_display' %} ">Personal Info</a>
+            <a href="{% url 'myaccount' %} ">Account</a>
+            <div class="user-logo">
+                <img src="your-logo-path.png" alt="User" id="userLogo">
+                <i class="default-user-icon">👤</i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Containers -->
+    <div class="container-grid">
+        <!-- First container with video 1 -->
+       
+
+        <a href="{% url 'videocallfun' %}" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="{% static 'videos/Bgvideo.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Video Call</h2>
+         
+            </div>
+        </a>
+
+        <!-- Second container with video 2 -->
+        <a href="{% url 'article' %}" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="{% static 'videos/articlevideo.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Articles</h2>
+          
+            </div>
+        </a>
+
+        <!-- Third container with video 3 -->
+        <a href="{% url 'bmi' %}" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="{% static 'videos/bmivideo.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2 style="color: rgb(32, 255, 236);">BMI Calculator</h2>
+           
+            </div>
+        </a>
+
+        <!-- Second Row -->
+        <a href="{% url 'protinecal' %}" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="{% static 'videos/protinecal.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Protine Calculator</h2>
+
+            </div>
+        </a>
+
+        <a href="workout5.html" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Coming Soon...</h2>
+                <p></p>
+            </div>
+        </a>
+
+        <a href="workout6.html" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Coming Soon...</h2>
+                <p></p>
+            </div>
+        </a>
+
+        <!-- Third Row -->
+        <a href="workout7.html" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Coming Soon...</h2>
+                <p></p>
+            </div>
+        </a>
+
+        <a href="workout8.html" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="video8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Coming Soon...</h2>
+                <p></p>
+            </div>
+        </a>
+
+        <a href="workout9.html" class="container-link">
+            <div class="container">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="video9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Coming Soon...</h2>
+                <p></p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Add this script section just before the closing </body> tag -->
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 1000); // Shows loader for 1 second, adjust time as needed
+        });
+
+        function createVideoElement(videoSrc) {
+            const video = document.createElement('video');
+            video.src = videoSrc;
+            video.muted = true;
+            video.autoplay = true;
+            video.loop = true;
+            video.style.width = '100%';
+            video.style.height = '100%';
+            video.style.objectFit = 'cover';
+            return video;
+        }
+
+        // Updated event listeners
+        const containers = document.querySelectorAll('.container');
+        const containerLinks = document.querySelectorAll('.container-link');
+
+        containerLinks.forEach(link => {
+            const container = link.querySelector('.container');
+            const videoSrc = container.getAttribute('data-video');
+            let video = null;
+
+            link.addEventListener('mouseenter', () => {
+                if (videoSrc) {
+                    video = createVideoElement(videoSrc);
+                    container.appendChild(video);
+                }
+                container.style.transform = 'scale(1.05)';
+            });
+
+            link.addEventListener('mouseleave', () => {
+                if (video) {
+                    video.remove();
+                    video = null;
+                }
+                container.style.transform = 'scale(1)';
+            });
+        });
+
+        // Replace the existing video event listeners with this updated code
+        document.querySelectorAll('video').forEach(video => {
+            // Handle any errors that might occur during playback
+            video.addEventListener('error', function(e) {
+                console.error('Error occurred in video:', e);
+                this.load(); // Reload the video if an error occurs
+            });
+
+            // Handle video ending
+            video.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play().catch(function(error) {
+                    console.log("Play failed:", error);
+                });
+            });
+
+            // Handle if video playback is stuck
+            video.addEventListener('stalled', function() {
+                this.load(); // Reload the video
+                this.play().catch(function(error) {
+                    console.log("Play failed after stall:", error);
+                });
+            });
+
+            // Initial play setup
+            video.play().catch(function(error) {
+                console.log("Initial play failed:", error);
+            });
+        });
+    </script>
+</body>
+</html> 

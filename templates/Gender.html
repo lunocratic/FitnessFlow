@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fitness Destinations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/Gender.css' %}"/> <!-- Use the static tag for CSS -->
+</head>
+<body>
+    <!-- Background Video for Desktop -->
+    <video autoplay loop muted class="background-video">
+        <source src="{% static 'videos/Background.mp4' %}" type="video/mp4"/>
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Video for Mobile -->
+    <video autoplay loop muted class="background-video-mobile">
+        <source src="{% static 'videos/Bgvideo.mp4' %}" type="video/mp4"/>
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <!-- Male Card -->
+        <div class="card">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="{% static 'images/YsfhvibR4UTDdCObdoaiLXPjGW8PeFPjfO6FbRlfiMj03muOB.jpg' %}" alt="Male fitness model" />
+                    <div class="text">Male</div>
+                </div>
+                <div class="back">
+                    <div class="text">Male</div>
+                    <p>Click the Go option for the next page.</p>
+                    <a class="login-button" href="{% url 'signup' %}">Go</a> <!-- Django URL for signup -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Heading and Subheading -->
+        <div class="text-center mt-8">
+            <h1 class="text-4xl font-bold text-white">Fit Flow</h1>
+            <p class="text-xl mt-4 text-white">Your journey to a healthier life starts here.</p>
+        </div>
+
+        <!-- Female Card -->
+        <div class="card">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="{% static 'images/Female.webp' %}" alt="Female fitness model" />
+                    <div class="text">Female</div>
+                </div>
+                <div class="back">
+                    <div class="text">Female</div>
+                    <p>Click the Go option for the next page.</p>
+                    <a class="login-button" href="{% url 'signup' %}">Go</a> <!-- Django URL for signup -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
