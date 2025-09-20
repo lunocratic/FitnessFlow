@@ -19,7 +19,7 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
 
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 1. **Download** the project ZIP file from the link above.
 2. **Unzip** the file and navigate to the project directory.
