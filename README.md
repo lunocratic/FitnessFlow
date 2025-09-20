@@ -14,16 +14,19 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 <br><br>
 
-## Screenshots
+## Screenshots <br><br>
 
 **Home Page**
-![App Screenshot](Screenshots/home.png) <br>
+![App Screenshot](Screenshots/home.png) <br><br>
+
 **Signin/Signup Page**
-![App Screenshot](Screenshots/login.png) <br>
+![App Screenshot](Screenshots/login.png) <br><br>
+
 **Dashboard Page**
-![App Screenshot](Screenshots/dashboard.png)< br>
+![App Screenshot](Screenshots/dashboard.png) <br><br>
+
 **Blogs Page**
-![App Screenshot](Screenshots/blogs.png) <br>
+![App Screenshot](Screenshots/blogs.png) <br><br>
 
 
 ## 🚀 Project Download
