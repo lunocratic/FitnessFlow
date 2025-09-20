@@ -9,9 +9,11 @@ Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite
 <br>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic)  ⏎ ʀᴇᴛᴜʀɴ ᴛᴏ ᴘʀᴏꜰɪʟᴇ
+
+<br>
 <br>
 
-[![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link) ⏎ ᴄʟɪᴄᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ
 
 <br>
 
