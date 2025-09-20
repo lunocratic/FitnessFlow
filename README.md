@@ -12,7 +12,7 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
+<br><br>
 
 ## Screenshots
 
