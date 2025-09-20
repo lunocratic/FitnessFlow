@@ -16,7 +16,7 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1-tS3aP9MBc7lgxjPGoOr3WrAaRdS6W6m/view?usp=sharing)
+![App Screenshot](Screenshots/home.png)
 
 ## 🚀 Project Download
 
