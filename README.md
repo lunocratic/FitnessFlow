@@ -46,12 +46,12 @@ Though Simple, It Sparked My Interest In Django And Remains One Of My Favorite P
 ![App Screenshot](Screenshots/blogs.png) <br><br>
 
 
-## Project Download
+**Project Download**
+<br>
 
-### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)  ⏎ ᴄʟɪᴄᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ
 
-
-## Setup Instructions
+**Setup Instructions**
 
 1. **Download** the project ZIP file from the link above.
 2. **Unzip** the file and navigate to the project directory.
