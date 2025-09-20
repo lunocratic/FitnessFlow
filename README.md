@@ -1,6 +1,9 @@
 # Fitness Flow
 
-This project, **Fitness Flow**, was completed by me in my **first year** as part of my **DTI project**
+Fitness Flow Is A Beginner-Level Django Project I Completed In My First Year As Part Of My DTI Project. <br>
+It Is A Fitness Tracker Website That Connects Users With Trainers Via Video Calls, <br>
+Includes A Calorie Tracker, Leaderboard, Blogs, And Dynamic Data.  <br>
+Though Simple, It Sparked My Interest In Django And Remains One Of My Favorite Projects 🩵
 
 **FRONT END**
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
