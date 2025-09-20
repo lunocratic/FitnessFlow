@@ -16,10 +16,14 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
 
 ## Screenshots
 
-![App Screenshot](Screenshots/home.png)
-![App Screenshot](Screenshots/login.png)
-![App Screenshot](Screenshots/dashboard.png)
-![App Screenshot](Screenshots/blogs.png)
+**Home Page**
+![App Screenshot](Screenshots/home.png) <br>
+**Signin/Signup Page**
+![App Screenshot](Screenshots/login.png) <br>
+**Dashboard Page**
+![App Screenshot](Screenshots/dashboard.png)< br>
+**Blogs Page**
+![App Screenshot](Screenshots/blogs.png) <br>
 
 
 ## 🚀 Project Download
