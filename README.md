@@ -1,10 +1,15 @@
-# Fitness Flow [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic)
+# Fitness Flow 
 
 Fitness Flow Is A Beginner Level **Django Project**
 I Completed In **My First Year** As Part Of My **DTI Project** <br>
 It Is **A Fitness Website** That Connects Users With Trainers Via **Video Calls**, <br>
 Includes A **Calorie Tracker**, **Leaderboard**, Blogs, And **Dynamic Data**.  <br>
-Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite Projects XD🩵**
+Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite Projects XD🩵** 
+
+<br>
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic) ⏎
+<br>
+
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
 
 <br>
