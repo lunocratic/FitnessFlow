@@ -7,7 +7,10 @@ Includes A **Calorie Tracker**, **Leaderboard**, Blogs, And **Dynamic Data**.  <
 Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite Projects XD🩵** 
 
 <br>
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic) ⏎
+
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic) 
+
+⏎
 <br>
 
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
