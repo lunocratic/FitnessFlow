@@ -4,7 +4,7 @@ Fitness Flow Is A Beginner Level **Django Project**
 I Completed In **My First Year** As Part Of My **DTI Project** <br>
 It Is **A Fitness Website** That Connects Users With Trainers Via **Video Calls**, <br>
 Includes A **Calorie Tracker**, **Leaderboard**, Blogs, And **Dynamic Data**.  <br>
-Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite** Projects 🩵
+Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite Projects XD🩵**
 
  <br> <br>
 **I USED**
