@@ -12,6 +12,14 @@ Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite
 𝗜𝗻𝗰𝗹𝘂𝗱𝗲𝘀 𝗔 𝗖𝗮𝗹𝗼𝗿𝗶𝗲 𝗧𝗿𝗮𝗰𝗸𝗲𝗿, 𝗟𝗲𝗮𝗱𝗲𝗿𝗯𝗼𝗮𝗿𝗱, 𝗕𝗹𝗼𝗴𝘀, 𝗔𝗻𝗱 𝗗𝘆𝗻𝗮𝗺𝗶𝗰 𝗗𝗮𝘁𝗮.  <𝗯𝗿>
 𝗧𝗵𝗼𝘂𝗴𝗵 𝗦𝗶𝗺𝗽𝗹𝗲, 𝗜𝘁 𝗦𝗽𝗮𝗿𝗸𝗲𝗱 𝗠𝘆 𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁 𝗜𝗻 𝗗𝗷𝗮𝗻𝗴𝗼 𝗔𝗻𝗱 𝗥𝗲𝗺𝗮𝗶𝗻𝘀 𝗢𝗻𝗲 𝗢𝗳 𝗠𝘆 𝗙𝗮𝘃𝗼𝗿𝗶𝘁𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝗫𝗗🩵
 
+# Fitness Flow 
+
+Fitness Flow Is A Beginner Level Django Project
+I Completed In My First Year As Part Of My DTI Project <br>
+It Is A Fitness Website That Connects Users With Trainers Via Video Calls, <br>
+Includes A Calorie Tracker, Leaderboard, Blogs, And Dynamic Data.  <br>
+Though Simple, It Sparked My Interest In Django And Remains One Of My Favorite Projects XD🩵 
+
 <br>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lunocratic)  ⏎ ʀᴇᴛᴜʀɴ ᴛᴏ ᴘʀᴏꜰɪʟᴇ
