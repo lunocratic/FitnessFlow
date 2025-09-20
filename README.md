@@ -6,13 +6,12 @@ Due to storage issues, the complete project files are hosted on an external serv
 
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
 
----
 
-## 🏆 About This Project
 
-This project, **Fitness Flow**, was completed by me in my **first year** as part of my **DTI project**. It aims to solve fitness challenges and provide guidance to users through an easy-to-use platform. Users can track and manage their fitness routines, making it easier to stay on track with their goals.
+# Fitness Flow
 
----
+This project, **Fitness Flow**, was completed by me in my **first year** as part of my **DTI project**
+
 
 ## 🔧 Setup Instructions
 
@@ -30,23 +29,16 @@ This project, **Fitness Flow**, was completed by me in my **first year** as part
     ```bash
     python manage.py runserver
     ```
+**FRONT END**
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
----
+**BACKEND**
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
-## 🤖 Features
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-- User authentication with Django's built-in authentication system.
-- Full CRUD operations for managing models.
-- Custom admin interface for managing project data.
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📢 Note
-
-We appreciate your understanding regarding the external file hosting. Feel free to **contribute** to this project by submitting **issues** or **pull requests**!
-
-Happy coding! 🎉
