@@ -5,6 +5,7 @@ I Completed In **My First Year** As Part Of My **DTI Project** <br>
 It Is **A Fitness Website** That Connects Users With Trainers Via **Video Calls**, <br>
 Includes A **Calorie Tracker**, **Leaderboard**, Blogs, And **Dynamic Data**.  <br>
 Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite Projects XD🩵**
+### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
 
 <br>
 
@@ -35,7 +36,7 @@ Though Simple, It Sparked My Interest In Django And Remains One Of My **Favorite
 ![App Screenshot](Screenshots/blogs.png) <br><br>
 
 
-## 🚀 Project Download
+## Project Download
 
 ### 📥 **[Download the Project ZIP File](https://drive.google.com/file/d/1pa1p8HkeoDN6easB9MNqq8bjAlw_4uxS/view?usp=drive_link)**
 
